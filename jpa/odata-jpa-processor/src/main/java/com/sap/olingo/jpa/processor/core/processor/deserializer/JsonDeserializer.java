@@ -1078,7 +1078,7 @@ public class JsonDeserializer implements ODataDeserializer {
     if (odataTypeNode != null) {
       String odataType = odataTypeNode.asText();
       if (!odataType.isEmpty()) {
-        odataType = odataType.substring(1);
+        //odataType = odataType.substring(1);
 
         if (odataType.equalsIgnoreCase(edmType.getFullQualifiedName().getFullQualifiedNameAsString())) {
           return edmType;
